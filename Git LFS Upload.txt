@@ -1,0 +1,23 @@
+GIT BASH:
+
+cd /path/to/your/project
+
+git init
+
+git lfs install
+
+git lfs track '*.pkl' #Specify file Extension
+
+cat .gitattributes
+
+git add .gitattributes
+git commit -m "Added Git LFS tracking for .pkl files"
+
+git add your_file.pkl
+git commit -m "Added model.pkl file to Git LFS"
+
+git remote add origin your-github-repo-url
+
+git push origin main
+
+
